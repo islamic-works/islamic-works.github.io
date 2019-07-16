@@ -1,0 +1,3 @@
+[submodule "audios"]
+	path = audios
+	url = git@github.com:islamic-works/audios.git
