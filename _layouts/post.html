@@ -29,10 +29,13 @@ layout: default
  -->
 					<div class="post-info">
 						<div class="post-info-author">
-							<div class="info-author-avatar" style="background-image: url({{"/assets/images/" | prepend: site.baseurl | append : site.author-avatar}})"></div>
-							<span>by</span>
-							<span class="info-author-name">{{site.author-name}}</span>
-						</div>
+								<span>by</span>
+								<span class="info-author-name">{{page.author | default: site.author-name}}</span>
+								{% if page.translator %}
+								<span>Translated</span>
+								<span class="info-author-name">{{page.translator | default: site.author-name}}</span>
+								{% endif %}
+							</div>
 						<div class="post-date">
 							<span>
 								<time datetime="{{ page.date | date_to_xmlschema }}">{{page.date | date: '%b %d, %Y'}}</time>
