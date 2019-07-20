@@ -10,25 +10,28 @@
         </div>
         <div class="footer-bottom">
           <div class="copyright">
-            <p>&copy; {{site.time | date: '%Y'}} Deployed by <a href="https://github.com/tanakachingonzo">Tanaka Chingonzo</a></p>
+            <p>&copy; {{site.time | date: '%Y'}} Design from <a href="https://github.com/tanakachingonzo">Tanaka Chingonzo</a> | &copy; {{site.time | date: '%Y'}} Development by <a href="https://github.com/crlosdelfino">Carlos Delfino</a></p>
           </div>
           <div class="footer-social">
             <ul class="list-reset">
+              {% if site.github_username %}
+              <li><i class="devicons devicons-git"></i>; {{site.time | date: '%Y'}} GitHub <a href="https://github.com/{{ site.github_username}}">GitHub</a></li>
+              {% endif %}
               {% if site.facebook %}
               <li><a href="{{ site.facebook }}">Facebook</a></li>
-              {% else %} {% endif %}
+              {% endif %}
 
               {% if site.twitter %}
               <li><a href="https://twitter.com/{{ site.twitter }}">Twitter</a></li>
-              {% else %} {% endif %}
+              {% endif %}
 
               {% if site.instagram %}
               <li><a href="{{ site.instagram }}">Instagram</a></li>
-              {% else %} {% endif %}
+              {% endif %}
 
               {% if site.pinterest %}
               <li><a href="{{ site.pinterest }}">Pinterest</a></li>
-              {% else %} {% endif %}
+              {% endif %}
             </ul>
           </div>
         </div>
