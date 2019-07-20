@@ -15,13 +15,19 @@ Este aplicativo está sendo desenvolvido com diversos propósitos, primeiro me a
 
 ![Islamic APP]({{site.url}}/assets/images/islamic-app/Screenshot_20190719-205625.png)
 
-O Fonte somente será liberado na versão 0.0.2-beta quando todas as funcionalidades básicas estiverem implementadas
+O Fonte somente será liberado na versão 0.0.2-beta quando todas as funcionalidades básicas estiverem implementadas. porém veja que os algoritmos principais estão disponíveis nos módulos e componentes em seus respetivos repositórios:
 
 - [Calendário - em processo de finalização](https://github.com/islamic-works/praytimes-module)
 - [Glossário - Versão beta liberada](https://github.com/islamic-works/glossary-module)
 - Localização - por desenvolver
 - Sobre - Versão beta liberada
 - [Rss Feed Read - Versão beta liberada](https://github.com/islamic-works/rss-reader-module)
+
+## Calculando os Horários de Oração
+
+Algoritmo para calculo dos horários de oração.
+
+Estou planejando já na próxima semana descrever o algorítimo de calculo dos horários de oração.
 
 ## Apoio
 
