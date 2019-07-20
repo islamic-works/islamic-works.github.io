@@ -25,11 +25,11 @@
 
   <div class="widget widget-social">
           <style type="text/css" media="screen">
-        .gr_grid_container {
+        .projects_container {
           /* customize grid container div here. eg: width: 500px; */
         }
 
-        .gr_grid_book_container {
+        .projects_detail_container {
           /* customize book cover container div here */
           float: left;
           width: 98px;
@@ -43,58 +43,17 @@
             <h2>
       <a style="text-decoration: none;" rel="nofollow" href="">Projetos Islamic Works</a>
     </h2>
-  <div class="gr_grid_container">
-    <div class="gr_grid_book_container"><a title="" rel="nofollow" href=""><img alt="" border="0" src="" /></a></div>
-    <div class="gr_grid_book_container"><a title="" rel="nofollow" href=""><img alt="" border="0" src="" /></a></div>
-    <div class="gr_grid_book_container"><a title="" rel="nofollow" href=""><img alt="" border="0" src="" /></a></div>
-    <div class="gr_grid_book_container"><a title="" rel="nofollow" href=""><img alt="" border="0" src="" /></a></div>
-    <div class="gr_grid_book_container"><a title="" rel="nofollow" href=""><img alt="" border="0" src="" /></a></div>
-    <br style="clear: both"/><br/><a class="gr_grid_branding" style="font-size: .9em; color: #382110; text-decoration: none; float: right; clear: both" rel="nofollow" href=""></a>
-  <noscript><br/>Share <a rel="nofollow" href="/"></a>.</noscript>
-  </div>
-
+  <ul>
+      {% assign public_repositories = (site.github.public_repositories | sort: 'pushed_at') %}
+    {% for repository in public_repositories %}{%if repository.archived or repository.fork %}{%continue%}{% endif%}    
+    <li>
+      {% if repository.has_pages %}<a title="[{{ repository.name }}" rel="nofollow" href="{{ repository.homepage }}"><strong>{{ repository.name }}</strong></a>{% else %}<strong>{{ repository.name }}</strong>{%endif%}&nbsp;-&nbsp;
+      <a title="[{{ repository.name }}" rel="nofollow" href="{{ repository.html_url }}"><i class="devicons devicons-github">GitHub</i></a>&nbsp;&#8212;&nbsp;{{repository.description}}
+    </li>
+    {% endfor %}
+  </ul>
       </div>
-  </div>
- <!--  <div class="widget widget-social">
-    <h3 class="widget-title">Subscribe & Follow</h3>
-    <ul class="social-profiles list-reset">
-      {% if site.facebook %}
-      <li class="social-profiles-item">
-        <a href="{{ site.facebook }}" class="social-profiles-link"><i class="ion ion-logo-facebook"></i></a>
-      </li>
-      {% else %} {% endif %}
-
-       {% if site.twitter %}
-      <li class="social-profiles-item">
-        <a href="https://twitter.com/{{ site.twitter }}" class="social-profiles-link"><i class="ion ion-logo-twitter"></i></a>
-      </li>
-      {% else %} {% endif %}
-
-      {% if site.instagram %}
-      <li class="social-profiles-item">
-        <a href="{{ site.instagram }}" class="social-profiles-link"><i class="ion ion-logo-instagram"></i></a>
-      </li>
-      {% else %} {% endif %}
-
-      {% if site.pinterest %}
-      <li class="social-profiles-item">
-        <a href="{{ site.pinterest }}" class="social-profiles-link"><i class="ion ion-logo-pinterest"></i></a>
-      </li>
-      {% else %} {% endif %}
-    </ul>
-  </div> -->
-    <!-- Begin Mailchimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-  #mc_embed_signup{background:rgba(35,36,39,0.95); clear:left; font:14px Helvetica,Arial,sans-serif; }
-  /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
- 
-</div>
-
-<!--End mc_embed_signup-->
+  </div>  
 
   {% if site.instafeed == true %}
   <div class="widget widget-instagram">
