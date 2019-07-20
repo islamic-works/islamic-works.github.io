@@ -37,6 +37,6 @@ Para apoiar meus estudos, já que todo o código aberto pode contribuir também 
 <input type="hidden" name="hosted_button_id" value="CWUDP66Q95W44" />
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
 <img alt="" border="0" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1" />
-  <img alt="QR Code" border="1" src="./docs/PayPal-QR Code.png"/>
+  <img alt="QR Code" border="1" src="{{site.url}}/assets/images/sponsors/PayPal-QR Code.png"/>
 </form>
 
