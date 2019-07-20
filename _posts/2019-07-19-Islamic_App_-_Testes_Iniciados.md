@@ -6,11 +6,13 @@ image: bismila.png
 categories: ["App","Islamic App"]
 ---
 
-Este aplicativo está sendo desenvolvido com diversos propóstios, primeiro me ajudar com minhas orações e estudos no Islamismo, e em segundo desenvolver cada vez mais minhas habilidades ciêntificas, dentre elas a Exegece Islamica do Alcorão, O Estudo da Astronomia em especial o movimento do sol, da terra e da lua para calculos da oração e também para uso com PicoSats e NanoSats, O Estudo da programação para Celular e todos os conceitos relacionados.
+Este aplicativo está sendo desenvolvido com diversos propóstios, primeiro me ajudar com minhas orações e estudos no Islamismo, e em segundo desenvolver cada vez mais minhas habilidades ciêntificas, dentre elas a Exegese Islamica do Alcorão, O Estudo da Astronomia em especial o movimento do sol, da terra e da lua para calculos da oração e também para uso com PicoSats e NanoSats, O Estudo da programação para Celular e todos os conceitos relacionados.
 
 <!--more-->
 
 [O APK para testes do Calendário de Orações está liberado neste link.](https://github.com/islamic-works/islamic-app/releases/tag/v0.0.1-alpha-2)
+
+![Islamic APP]({{site.url}}/assets/images/Screenshot_20190719-205625.png)
 
 O Fonte somente será liberado na versão 0.0.2-beta quando todas as funcionalidades básicas estiverem implementadas
 
