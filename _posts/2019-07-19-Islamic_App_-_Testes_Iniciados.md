@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  "Islamic App - Testes Iniciados"
@@ -6,6 +5,7 @@ date:   2019-07-15 18:08:43 -0300
 image: bismila.png
 categories: ["App","Islamic App"]
 ---
+
 Este aplicativo está sendo desenvolvido com diversos propóstios, primeiro me ajudar com minhas orações e estudos no Islamismo, e em segundo desenvolver cada vez mais minhas habilidades ciêntificas, dentre elas a Exegece Islamica do Alcorão, O Estudo da Astronomia em especial o movimento do sol, da terra e da lua para calculos da oração e também para uso com PicoSats e NanoSats, O Estudo da programação para Celular e todos os conceitos relacionados.
 
 <!--more-->
