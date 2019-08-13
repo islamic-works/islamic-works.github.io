@@ -17,10 +17,11 @@ Este aplicativo está sendo desenvolvido com diversos propósitos, primeiro me a
 
 O Fonte somente será liberado na versão 0.0.2-beta quando todas as funcionalidades básicas estiverem implementadas. porém veja que os algoritmos principais estão disponíveis nos módulos e componentes em seus respetivos repositórios:
 
+- [Core da aplicação - Versão beta liberada](https://github.com/islamic-works/islamic-app)
 - [Calendário - em processo de finalização](https://github.com/islamic-works/praytimes-module)
 - [Glossário - Versão beta liberada](https://github.com/islamic-works/glossary-module)
 - Localização - por desenvolver
-- Sobre - Versão beta liberada
+- [Sobre - Versão beta liberada](https://github.com/islamic-works/islamic-app)
 - [Rss Feed Read - Versão beta liberada](https://github.com/islamic-works/rss-reader-module)
 
 ## Calculando os Horários de Oração
