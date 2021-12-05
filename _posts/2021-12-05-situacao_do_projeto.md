@@ -3,7 +3,7 @@ layout: post
 title:  "Situação do Projeto - 2021"
 date:   2021-12-05 16:00 -0300
 tags: [projeto]
-image: bismila.png
+image: posts/muslim-lady-use-smart-phone-and-purchase-e-commerce-internet-on-sofa-in-living-room-at-house-header.jpg
 categories: [projetos]
 ---
 
