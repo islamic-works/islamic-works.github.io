@@ -41,7 +41,11 @@ mailchimp: # Add your MailChimp form identifier. For example - http://eepurl.com
 #-------------------------------
 # Build settings
 markdown: kramdown
-highlighter: ruge
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+
 permalink: ':title/'
 plugins:
  - jekyll-feed
