@@ -640,6 +640,23 @@
   }
 
   .engagement-hero__cards {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: auto;
+  }
+
+  .engagement-hero__cards .engagement-card:first-child {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .engagement-hero__cards .engagement-card:first-child .engagement-card__text {
+    flex: 1;
+  }
+
+  .engagement-hero__cards .engagement-card:first-child .engagement-card__link {
+    align-self: flex-start;
   }
 }
