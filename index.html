@@ -2,13 +2,43 @@
 layout: default
 ---
 <div class="container">
+	<section class="engagement-hero">
+		<div class="engagement-hero__content">
+			<h1 class="engagement-hero__title">Conheça e apoie iniciativas que transformam vidas</h1>
+			<p class="engagement-hero__subtitle">Inspiramos confiança, partilhamos conhecimento islâmico e construímos pontes de solidariedade. Explore projetos, participe de ações voluntárias e faça parte desta rede de altruísmo.</p>
+			<div class="engagement-hero__actions">
+				<a class="button button--primary" href="#envolva-se">Quero me envolver</a>
+				<a class="secondary-link" href="{{ site.baseurl }}/sobre">Saiba mais sobre nós</a>
+			</div>
+		</div>
+		<div class="engagement-hero__cards">
+			<article class="engagement-card">
+				<h3 class="engagement-card__title">Projetos em Destaque</h3>
+				<p class="engagement-card__text">Conheça as frentes de atuação, reporte o impacto alcançado e descubra como cada contribuição fortalece a comunidade.</p>
+				<a class="engagement-card__link" href="{{ site.baseurl }}/projetos">Explorar projetos</a>
+			</article>
+			<article class="engagement-card">
+				<h3 class="engagement-card__title">Conteúdo Inspirador</h3>
+				<p class="engagement-card__text">Artigos e estudos cuidadosamente selecionados para nutrir fé, ética e responsabilidade social.</p>
+				<a class="engagement-card__link" href="{{ site.baseurl }}/arquivos">Ler artigos</a>
+			</article>
+			<article class="engagement-card">
+				<h3 class="engagement-card__title">Comunidade Ativa</h3>
+				<p class="engagement-card__text">Conecte-se com iniciativas locais, eventos colaborativos e oportunidades de voluntariado.</p>
+				<a class="engagement-card__link" href="{{ site.baseurl }}/contato">Converse com a equipe</a>
+			</article>
+		</div>
+	</section>
+</div>
+
+<div class="container">
 	<div class="row">
 	{% if site.posts.size > 0 %}
 		{%- for post in paginator.posts -%}
 		{% if forloop.index <= 1 %}
 		<div class="col col-12">
 			<article class="article-first">
-				<div class="article-image-first" style="background-size: contain; background-repeat: no-repeat; background-image: url({{"/assets/images/" | prepend: site.baseurl | append : post.image}})">
+				<div class="article-image-first" style="background-image: url('{{ site.baseurl }}/assets/images/{{ post.image }}'); background-size: contain; background-repeat: no-repeat;">
 					<div class="article-content-first">
 						<div class="article-tag">
 						{% if post.tags.size >= 1 %}
@@ -39,7 +69,7 @@ layout: default
 				<article class="article col col-12 col-t-6">
 					<div class="article-box">
 						<div class="article-head">
-							<a href="{{ post.url | prepend: site.baseurl }}" class="article-image" style="background-image: url({{"/assets/images/" | prepend: site.baseurl | append : post.image}})">
+						<a href="{{ post.url | prepend: site.baseurl }}" class="article-image" style="background-image: url('{{ site.baseurl }}/assets/images/{{ post.image }}'); background-size: cover; background-position: center;">
 							</a>
 						</div>
 						<div class="article-content">
@@ -70,4 +100,30 @@ layout: default
 			{% include sidebar.html %}
 		</div>
 	</div>
+</div>
+
+<div class="container" id="envolva-se">
+	<section class="engagement-section">
+		<header class="engagement-section__header">
+			<h2 class="engagement-section__title">Envolva-se com a Islamic Works</h2>
+			<p class="engagement-section__subtitle">Junte-se a pessoas que acreditam em solidariedade, transparência e desenvolvimento humano. Seu apoio sustenta programas que impactam comunidades inteiras.</p>
+		</header>
+		<div class="engagement-section__grid">
+			<article class="engagement-card">
+				<h3 class="engagement-card__title">Seja voluntário</h3>
+				<p class="engagement-card__text">Disponibilize suas habilidades em projetos educacionais, ações sociais ou suporte digital.</p>
+				<a class="engagement-card__link" href="{{ site.baseurl }}/voluntariado">Inscreva-se</a>
+			</article>
+			<article class="engagement-card">
+				<h3 class="engagement-card__title">Contribua financeiramente</h3>
+				<p class="engagement-card__text">Apoie financeiramente para garantir continuidade a iniciativas que promovem dignidade.</p>
+				<a class="engagement-card__link" href="{{ site.baseurl }}/doacoes">Fazer uma doação</a>
+			</article>
+			<article class="engagement-card">
+				<h3 class="engagement-card__title">Compartilhe conhecimento</h3>
+				<p class="engagement-card__text">Ajude a ampliar a rede levando o conteúdo a quem precisa de orientação e acolhimento.</p>
+				<a class="engagement-card__link" href="{{ site.baseurl }}/contato">Fale com a equipe</a>
+			</article>
+		</div>
+	</section>
 </div>
