@@ -1,42 +1,44 @@
 // FOOTER
 .footer {
-  padding: 50px 0;
-  margin-top: 30px;
-  background: $black;
+  padding: 60px 0;
+  margin-top: 60px;
+  background: linear-gradient(180deg, rgba($white, 0.98) 0%, rgba($blue-darken, 0.8) 100%);
+  border-top: 1px solid rgba($gray-blue, 0.1);
 }
 
 .footer-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 15px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid $border-color;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba($gray-blue, 0.15);
   .logo-text {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
-    line-height: 16px;
+    line-height: 18px;
     text-transform: uppercase;
-    letter-spacing: 5px;
-    color: $text;
+    letter-spacing: 4px;
+    color: $primary-color;
     &:hover {
-      color: $gray-blue;
+      color: darken($primary-color, 5%);
     }
   }
   .top {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
-    border: 1px solid $blue-black;
-    background-color: $blue-black;
-    color: $text;
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba($secondary-color, 0.2);
+    background-color: $white;
+    color: $secondary-color;
     cursor: pointer;
     transition: $global-transition;
-    opacity: .5;
+    box-shadow: 0 8px 18px rgba($secondary-color, 0.12);
     &:hover {
-      opacity: 1;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba($secondary-color, 0.18);
     }
   }
 }
@@ -45,16 +47,18 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  gap: 20px;
+  color: $gray-blue;
   .copyright {
-    margin-right: 60px;
+    margin-right: 40px;
     p {
       margin-bottom: 0;
-      font-size: 13px;
+      font-size: 14px;
       color: $gray-blue;
       a {
-        color: $gray-blue;
+        color: $secondary-color;
         &:hover {
-          color: $primary-color;
+          color: darken($secondary-color, 10%);
         }
       }
     }
@@ -63,17 +67,17 @@
     ul {
       li {
         display: inline-block;
-        margin-left: 15px;
+        margin-left: 18px;
         &:first-child {
           margin-left: 0;
         }
         a {
-          font-size: 13px;
-          font-weight: bold;
-          color: $gray-blue;
+          font-size: 14px;
+          font-weight: 600;
+          color: $secondary-color;
           transition: $global-transition;
           &:hover {
-            color: $primary-color;
+            color: darken($secondary-color, 10%);
           }
         }
       }

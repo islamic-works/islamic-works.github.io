@@ -12,8 +12,8 @@ author-avatar: carlos-delfino-small.jpg
 #-------------------------------
 # Contact links
 github_username:  islamic-works
-facebook:  # Add your Facebook handle
-twitter:   # Add your Twitter handle
+facebook:  https://web.facebook.com/islamicworks
+twitter:   islamicworks
 instagram: # Add your Instagram handle
 pinterest: # Add your Pinterest handle
 
@@ -41,7 +41,11 @@ mailchimp: # Add your MailChimp form identifier. For example - http://eepurl.com
 #-------------------------------
 # Build settings
 markdown: kramdown
-highlighter: ruge
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+
 permalink: ':title/'
 plugins:
  - jekyll-feed
