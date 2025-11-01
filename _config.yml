@@ -1,8 +1,21 @@
 title: Islamic Works
 email: professor@carlosdelfino.eti.br
 description: Projetos de Software, Sites e Livros sobre o Islan, este site é o ponto de entrada para o projeto Islamic Works, onde listo e organizo Softwares, Sites e textos de livros sobre o Islan, todo material aqui armazenado foi criado por mim com base nos meus estudos, ou clonado de colegas com autorização dos mesmos.
+keywords:
+  - "Islamic Works"
+  - "Islamic Passport"
+  - "identidade digital islâmica"
+  - "blockchain islâmico"
+  - "educação islâmica"
+social_image: "/android-chrome-512x512.png"
+robots: "index,follow"
+og_type: "website"
+twitter_card: "summary_large_image"
+lang: pt-BR
 baseurl: "" # the subpath of your site, e.g. /blog
-#url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://islamic-works.github.io" # base hostname & protocol
+atom_feed:
+  path: atom.xml
 
 #-------------------------------
 # About Section
@@ -48,32 +61,25 @@ kramdown:
 
 permalink: ':title/'
 plugins:
- - jekyll-feed
- - jekyll-paginate
- - jekyll-sitemap
- - jekyll-github-metadata
- - jekyll-gist
- - jekyll-mentions
- - jekyll-coffeescript
- - jekyll-redirect-from
- - jekyll-sass-converter
- - jekyll-seo-tag
- - jekyll-archives
- - jekyll-jupyter-notebook
- - kramdown
- - liquid
- - rouge
- - pygments
- - jemoji
- - sass
- - safe_yaml
-
- - kramdown
- - liquid
- - rouge
- - pygments
- - jemoji
- - sass
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-github-metadata
+  - jekyll-gist
+  - jekyll-mentions
+  - jekyll-coffeescript
+  - jekyll-redirect-from
+  - jekyll-sass-converter
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-jupyter-notebook
+  - kramdown
+  - liquid
+  - rouge
+  - pygments
+  - jemoji
+  - sass
+  - safe_yaml
 
 paginate: 7
 paginate_path: "/page/:num"
