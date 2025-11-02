@@ -60,8 +60,8 @@
 {% elsif page.authors %}
   {% assign authors_list = page.authors | join: ', ' %}
   <meta name="author" content="{{ authors_list }}" />
-{% elsif site.author-name %}
-  <meta name="author" content="{{ site.author-name }}" />
+{% elsif site['author-name'] %}
+  <meta name="author" content="{{ site['author-name'] }}" />
 {% endif %}
 
 {% if page.robots %}

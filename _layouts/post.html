@@ -30,10 +30,10 @@ layout: default
 					<div class="post-info">
 						<div class="post-info-author">
 								<span>by</span>
-								<span class="info-author-name">{{page.author | default: site.author-name}}</span>
+								<span class="info-author-name">{{page.author | default: site['author-name']}}</span>
 								{% if page.translator %}
 								<span>Translated</span>
-								<span class="info-author-name">{{page.translator | default: site.author-name}}</span>
+								<span class="info-author-name">{{page.translator | default: site['author-name']}}</span>
 								{% endif %}
 							</div>
 						<div class="post-date">
@@ -99,7 +99,7 @@ layout: default
 				</div>
 
 			</div>
-			{% if site.disqus-identifier %}
+			{% if site['disqus-identifier'] %}
 				{% include disqus-comments.html %}
 			{% endif %}
 	</article> <!-- /.post -->
