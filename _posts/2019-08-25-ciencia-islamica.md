@@ -4,7 +4,7 @@ layout: post
 author: "João Filipe Queiró"
 date:   2019-08-22 16:00 -0300
 tags: [ciência, conhecimento, crescimento, aprendizado, ]
-image: ciencia-islamica\ciencia-islamica-netnature.png
+image: ciencia-islamica/ciencia-islamica-netnature.png
 categories: ["App","Islamic App", contribut]
 ---
 O Artigo abaixo foi escrito pelo professor João Filipe Queiró, o prof. é apenas autor do artigo e não está relacionado ao nosso site, porém pedi autorização ao mesmo para publicar seu artigo aqui, já que dentro dos que li foi um artigo imparcial de um acadêmico que demonstra um cenário real da ciência no Islamismo, em especial no momento que mais desenvolveu.
