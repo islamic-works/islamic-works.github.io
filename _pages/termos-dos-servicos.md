@@ -2,6 +2,11 @@
 layout: page
 title: Termos de Serviço
 permalink: /termos-dos-servicos/
+navigation_label: "Termos de Serviço"
+navigation_header: false
+navigation_footer_group: "Legal"
+navigation_footer_group_order: 40
+navigation_footer_order: 10
 ---
 <p>Ao utilizar o Islamic Works, você concorda em agir com retidão, confiança e honra, em consonância com os princípios islâmicos (amanah e sharaf) que orientam toda a nossa comunidade.</p>
 

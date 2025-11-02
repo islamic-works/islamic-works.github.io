@@ -3,6 +3,12 @@ layout: page
 title: Apoio
 image: sponsor.png
 permalink: /sponsor/
+navigation_label: "Apoio"
+navigation_header: true
+navigation_header_order: 30
+navigation_footer_group: "Engajamento"
+navigation_footer_group_order: 30
+navigation_footer_order: 10
 ---
 ## Compromisso com a amanah (confiança)
 

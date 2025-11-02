@@ -1,10 +1,15 @@
 ---
 layout: page
-title: Arquivo de Artigos
+title: Arquivo
 permalink: /arquivos/
 image: archive.jpg
+navigation_label: "Arquivo"
+navigation_header: true
+navigation_header_order: 20
+navigation_footer_group: "Recursos"
+navigation_footer_group_order: 20
+navigation_footer_order: 10
 ---
-
 <p>Consulte abaixo o histórico completo de artigos publicados no Islamic Works, organizado por ano para facilitar a navegação.</p>
 
 <section class="archive-list">

@@ -3,6 +3,11 @@ layout: page
 title: Sobre Nós
 image: about.png
 permalink: /about/
+navigation_label: "Sobre Nós"
+navigation_header: true
+navigation_header_order: 10
+navigation_footer_group: "Institucional"
+navigation_footer_order: 10
 ---
 Islamic Works é uma iniciativa colaborativa dedicada a fortalecer a presença do conhecimento islâmico na esfera digital, oferecendo recursos educativos confiáveis para comunidades de língua portuguesa. Atuamos como ponte entre estudiosos, educadores e entusiastas que buscam referências alinhadas à tradição profética, tendo a confiança (amanah) e a honra (sharaf) como pilares.
 
