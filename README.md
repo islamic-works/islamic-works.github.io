@@ -11,69 +11,6 @@ Me ajude a manter este trabalho e melhorar os plugins, com as doações, poderei
 <img alt="" border="0" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1" />
 </form>
 
-##
-Imagem do cabeçalho da página
-
-Autor no Wiki: خالد حسني (previous version Baba66) - Obra do próprio
-
-## Site baseado no projeto: Galada - Easy & Simple Theme for Personal Blog
-
-Galada is an easy and simple theme for Jekyll. Dark colors, give it a special exquisite look. A careful approach to design and features make it an ideal solution for a personal blog.
-
-* * *
-
-Table of Contents
------------------
-*   [Features](#features)
-*   [Demo](#demo)
-*   [Deployment](#deployment)
-*   [Posts](#posts)
-*   [Disqus Comments](#DisqusComments)
-*   [Instagram](#instagram)
-*   [Google Analytics](#GoogleAnalytics)
-*   [Update favicon](#UpdateFavicon)
-*   [Credits](#Credits)
-*   [Support](#Support)
-
-* * *
-
-### Features
-
-* 100% responsive and clean theme
-
-* Optimized for mobile devices
-
-* Minimal design
-
-* Valid HTML5 code
-
-* Post sharing
-
-* Subscription form
-
-* Supports Disqus Comments
-
-* Instagram Feed
-
-* Ionicons Icons
-
-* Google Fonts
-
-
-* * *
-
-### Demo
-
-Check the theme in action [Demo](https://artemsheludko.github.io/galada/)
-
-![Main page preview](https://github.com/artemsheludko/galada/blob/master/img/galada-main-page.jpg?raw=true)
-
-The post page would look like this:
-
-![Post page preview](https://github.com/artemsheludko/galada/blob/master/img/galada-post.jpg?raw=true)
-
-* * *
-
 ### Deployment
 
 To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `jekyll serve` or `bundle exec jekyll serve` to start the Jekyll server.
