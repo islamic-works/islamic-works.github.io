@@ -13,7 +13,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.8.5"
+gem "jekyll", "~> 3.10.0"
 
 gem 'github-pages', '>=180'
 gem 'github-pages-health-check', '>=1.2.0'
@@ -37,7 +37,7 @@ end
 gem "bundler"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "tzinfo-data", platforms: [:windows, :jruby]
 
 gem 'pygments.rb'
 gem 'rouge'
@@ -45,3 +45,4 @@ gem 'html-proofer'
 gem 'ffi'
 gem 'csv'
 gem 'rexml'
+gem 'faraday-retry'
