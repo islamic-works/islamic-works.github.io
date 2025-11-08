@@ -1,0 +1,42 @@
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="header-box">
+          <div class="logo-title">
+            <a href="{{site.baseurl}}/" class="logo-text">{{ site.title }}</a>
+          </div>
+
+          {% assign navigation_pages = site.pages | where_exp: 'page', 'page.navigation_header == true' | sort: 'navigation_header_order' %}
+          <nav class="nav-menu">
+            <i class="menu-close ion ion-ios-close"></i>
+            <ul class="menu-list">
+              <li class="menu-item"><a href="{{site.baseurl}}/" class="menu-link">Home</a></li>
+              {% for page in navigation_pages %}
+                {% if page.navigation_label %}
+                  <li class="menu-item"><a href="{{ page.url | prepend: site.baseurl }}" class="menu-link">{{ page.navigation_label }}</a></li>
+                {% elsif page.title %}
+                  <li class="menu-item"><a href="{{ page.url | prepend: site.baseurl }}" class="menu-link">{{ page.title }}</a></li>
+                {% endif %}
+              {% endfor %}
+              <li class="menu-item"><a href="{{ site.baseurl }}/#envolva-se" class="menu-link">Envolva-se</a></li>
+            </ul>
+          </nav>
+          <div class="nav-buttons">
+            <a href="{{ site.baseurl }}/#envolva-se" class="header-cta">Apoie a causa</a>
+            <i class="search-button ion ion-ios-search"></i>
+            <i class="menu-button d-hide ion ion-ios-menu"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="search">
+    <div class="search-box">
+      <i class="search-close-button ion ion-ios-close"></i>
+      <label for="js-search-input" class="screen-reader-text"></label>
+      <input type="text" id="js-search-input" class="search-text" autocomplete="off" placeholder="Search Something...">
+      <ol id="js-results-container" class="search-results-list"></ol>
+    </div>
+  </div>
+</header> <!-- /.header -->

@@ -1,0 +1,53 @@
+title: "Islamic Space"
+subtitle: "Construindo pontes para novas oportunidades"
+description: >-
+  Plataforma em desenvolvimento dedicada a conectar muçulmanos imigrantes a
+  redes de trabalho, formação e acolhimento, promovendo inclusão e autonomia.
+keywords:
+  - "Islamic Space"
+  - "comunidade muçulmana"
+  - "inclusão no trabalho"
+  - "imigrantes"
+  - "empregabilidade"
+social_image: "/assets/img/brand/social-card.svg"
+robots: "noindex,nofollow"
+url: ""
+baseurl: ""
+permalink: pretty
+lang: pt-BR
+timezone: America/Fortaleza
+atom_feed:
+  path: atom.xml
+markdown: kramdown
+kramdown:
+  input: GFM
+sass:
+  sass_dir: assets/css
+  style: compressed
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      og_type: "website"
+      twitter_card: "summary_large_image"
+      image: "/assets/img/brand/social-card.png"
+
+collections:
+  news:
+    output: true
+    permalink: /news/:name/
+  releases:
+    output: true
+    permalink: /releases/:name/
+
+exclude:
+  - "_site"
+  - "Gemfile.lock"
+  - "node_modules"
+  - ".github"
+  - ".git"

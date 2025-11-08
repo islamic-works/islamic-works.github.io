@@ -1,0 +1,73 @@
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="footer-top">
+          <h2 class="logo-title">
+            <a href="{{site.baseurl}}/" class="logo-text">{{ site.title }}</a>
+          </h2>
+          <button type="button" class="top" aria-label="Voltar ao topo"><i class="ion ion-ios-arrow-up"></i></button>
+        </div>
+
+        {% assign footer_pages = site.pages | where_exp: 'page', 'page.navigation_footer_group' %}
+        {% assign footer_pages = footer_pages | sort: 'navigation_footer_order' %}
+        {% assign footer_pages_by_group = footer_pages | sort: 'navigation_footer_group_order' %}
+        {% assign footer_group_names = footer_pages_by_group | map: 'navigation_footer_group' | uniq %}
+
+        {% if footer_group_names.size > 0 %}
+        <div class="footer-columns">
+          {% for group_name in footer_group_names %}
+            {% assign group_pages = footer_pages | where: 'navigation_footer_group', group_name | sort: 'navigation_footer_order' %}
+            {% if group_pages.size > 0 %}
+              <div class="footer-column">
+                <span class="footer-column-title">{{ group_name }}</span>
+                <ul class="footer-links list-reset">
+                  {% for page in group_pages %}
+                  <li>
+                    <a href="{{ page.url | prepend: site.baseurl }}">
+                      {% if page.navigation_label %}
+                        {{ page.navigation_label }}
+                      {% elsif page.title %}
+                        {{ page.title }}
+                      {% endif %}
+                    </a>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <div class="footer-bottom">
+          <div class="copyright">
+            <p>&copy; {{site.time | date: '%Y'}} Design from <a href="https://github.com/tanakachingonzo">Tanaka Chingonzo</a> | &copy; {{site.time | date: '%Y'}} Development by <a href="https://github.com/crlosdelfino">Carlos Delfino</a></p>
+          </div>
+          <div class="footer-social">
+            <ul class="list-reset">
+              {% if site.github_username %}
+              <li><a href="https://github.com/{{ site.github_username}}"><i class="devicons devicons-git"></i> GitHub</a></li>
+              {% endif %}
+              {% if site.facebook %}
+              <li><a href="{{ site.facebook }}">Facebook</a></li>
+              {% endif %}
+
+              {% if site.twitter %}
+              <li><a href="https://twitter.com/{{ site.twitter }}">Twitter</a></li>
+              {% endif %}
+
+              {% if site.instagram %}
+              <li><a href="{{ site.instagram }}">Instagram</a></li>
+              {% endif %}
+
+              {% if site.pinterest %}
+              <li><a href="{{ site.pinterest }}">Pinterest</a></li>
+              {% endif %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer> <!-- /.footer -->
