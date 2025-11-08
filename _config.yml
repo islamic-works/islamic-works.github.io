@@ -1,8 +1,8 @@
-title: Islamic Works
-email: professor@carlosdelfino.eti.br
-description: Projetos de Software, Sites e Livros sobre o Islan, este site é o ponto de entrada para o projeto Islamic Works, onde listo e organizo Softwares, Sites e textos de livros sobre o Islan, todo material aqui armazenado foi criado por mim com base nos meus estudos, ou clonado de colegas com autorização dos mesmos.
+title: Islamic Space
+email: islamicspace@rapport.tec.br
+description: Projetos de Software, Sites e Livros sobre o Islan, este site é o ponto de entrada para o projeto Islamic Space, onde listo e organizo Softwares, Sites e textos de livros sobre o Islan, todo material aqui armazenado foi criado por mim com base nos meus estudos, ou clonado de colegas com autorização dos mesmos.
 keywords:
-  - "Islamic Works"
+  - "Islamic Space"
   - "Islamic Passport"
   - "identidade digital islâmica"
   - "blockchain islâmico"
@@ -13,12 +13,12 @@ og_type: "website"
 twitter_card: "summary_large_image"
 lang: pt-BR
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://islamic-works.github.io" # base hostname & protocol
+url: "https://islamic-space.github.io" # base hostname & protocol
 github:
-  username: islamic-works
-  repository: islamic-works/islamic-works.github.io
-  repository_url: https://github.com/islamic-works/islamic-works.github.io
-  owner_url: https://github.com/islamic-works
+  username: islamic-space
+  repository: islamic-space/islamic-space.github.io
+  repository_url: https://github.com/islamic-space/islamic-space.github.io
+  owner_url: https://github.com/islamic-space
 atom_feed:
   path: atom.xml
 
@@ -29,9 +29,9 @@ author-avatar: carlos-delfino-small.jpg
 
 #-------------------------------
 # Contact links
-github_username:  islamic-works
-facebook:  https://web.facebook.com/islamicworks
-twitter:   islamicworks
+github_username:  islamic-space
+facebook:  https://web.facebook.com/islamic-space
+twitter:   islamicspace
 instagram: # Add your Instagram handle
 pinterest: # Add your Pinterest handle
 

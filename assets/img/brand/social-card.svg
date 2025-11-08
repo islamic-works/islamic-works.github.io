@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Islamic Space — Em construção</title>
+  <desc id="desc">Cartão social com fundo gradiente laranja e mensagem de site em construção.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff7c26" />
+      <stop offset="100%" stop-color="#e05c00" />
+    </linearGradient>
+    <linearGradient id="orb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e5" />
+      <stop offset="100%" stop-color="#ffd7b0" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" rx="48" />
+  <g opacity="0.35">
+    <circle cx="280" cy="180" r="180" fill="url(#orb)" />
+    <circle cx="960" cy="480" r="160" fill="url(#orb)" />
+  </g>
+  <g fill="#fff8f0">
+    <text x="120" y="250" font-family="'DM Sans', sans-serif" font-size="72" font-weight="700" letter-spacing="4">Islamic Space</text>
+    <text x="120" y="330" font-family="'DM Sans', sans-serif" font-size="34" opacity="0.82">
+      Estamos unindo muçulmanos imigrantes ao mercado de trabalho.
+    </text>
+    <text x="120" y="460" font-family="'DM Sans', sans-serif" font-size="28" opacity="0.82">
+      🚧 Plataforma em construção. Aguarde novidades em breve.
+    </text>
+  </g>
+</svg>
