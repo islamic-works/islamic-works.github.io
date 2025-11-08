@@ -13,7 +13,7 @@ og_type: "website"
 twitter_card: "summary_large_image"
 lang: pt-BR
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://islamic-space.github.io" # base hostname & protocol
+url: "https://islamicspace.rapport.tec.br/" # base hostname & protocol
 github:
   username: islamic-space
   repository: islamic-space/islamic-space.github.io
@@ -38,7 +38,7 @@ pinterest: # Add your Pinterest handle
 
 #-------------------------------
 # Comment Section (Disqus)
-disqus-identifier: islamic-works # Add your shortname for Disqus Comment. For example mr-brown
+disqus-identifier: islamic-space # Add your shortname for Disqus Comment. For example mr-brown
 
 
 #-------------------------------
@@ -48,7 +48,7 @@ instafeed: false # To enable the instafeed, use the value true. To turn off use 
 
 #-------------------------------
 # Google Analytics
-google-analytics: G-1K2T9GHBCX # Add your identifier. For example UA-99631805-1.
+google-analytics:  # Add your identifier. For example UA-99631805-1.
 
 
 #-------------------------------
