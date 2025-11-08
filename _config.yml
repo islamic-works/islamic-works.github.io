@@ -1,0 +1,146 @@
+title: Islamic Works
+email: professor@carlosdelfino.eti.br
+description: Projetos de Software, Sites e Livros sobre o Islan, este site é o ponto de entrada para o projeto Islamic Works, onde listo e organizo Softwares, Sites e textos de livros sobre o Islan, todo material aqui armazenado foi criado por mim com base nos meus estudos, ou clonado de colegas com autorização dos mesmos.
+keywords:
+  - "Islamic Works"
+  - "Islamic Passport"
+  - "identidade digital islâmica"
+  - "blockchain islâmico"
+  - "educação islâmica"
+social_image: "/android-chrome-512x512.png"
+robots: "index,follow"
+og_type: "website"
+twitter_card: "summary_large_image"
+lang: pt-BR
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://islamic-works.github.io" # base hostname & protocol
+github:
+  username: islamic-works
+  repository: islamic-works/islamic-works.github.io
+  repository_url: https://github.com/islamic-works/islamic-works.github.io
+  owner_url: https://github.com/islamic-works
+atom_feed:
+  path: atom.xml
+
+#-------------------------------
+# About Section
+author-name:   Carlos Delfino
+author-avatar: carlos-delfino-small.jpg
+
+#-------------------------------
+# Contact links
+github_username:  islamic-works
+facebook:  https://web.facebook.com/islamicworks
+twitter:   islamicworks
+instagram: # Add your Instagram handle
+pinterest: # Add your Pinterest handle
+
+
+#-------------------------------
+# Comment Section (Disqus)
+disqus-identifier: islamic-works # Add your shortname for Disqus Comment. For example mr-brown
+
+
+#-------------------------------
+# Instagram Feed
+instafeed: false # To enable the instafeed, use the value true. To turn off use the value false.
+
+
+#-------------------------------
+# Google Analytics
+google-analytics: G-1K2T9GHBCX # Add your identifier. For example UA-99631805-1.
+
+
+#-------------------------------
+# Newsletter
+mailchimp: # Add your MailChimp form identifier. For example - http://eepurl.com/gimyGj
+
+
+#-------------------------------
+# Build settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+
+permalink: ':title/'
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-github-metadata
+  - jekyll-gist
+  - jekyll-mentions
+  - jekyll-coffeescript
+  - jekyll-redirect-from
+  - jekyll-sass-converter
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-jupyter-notebook
+  - kramdown
+  - liquid
+  - rouge
+  - pygments
+  - jemoji
+  - sass
+  - safe_yaml
+
+paginate: 7
+paginate_path: "/page/:num"
+
+include:
+  - _pages
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://prose.github.io/starter/'
+  relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  media: 'assets/images'
+  ignore:
+    - index.md
+    - _config.yml
+    - /_layouts
+    - /_includes
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "blog"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Apples"
+              value: "apples"
+            - name: "Bananas"
+              value: "bananas"
+    _posts/static:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+   - Gemfile
+   - Gemfile.lock
+   - node_modules
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/
