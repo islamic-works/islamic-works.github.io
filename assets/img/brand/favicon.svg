@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Islamic Works</title>
+  <desc id="desc">Logotipo minimalista em tons de laranja simbolizando conexão e acolhimento.</desc>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff7c26" />
+      <stop offset="100%" stop-color="#e05c00" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#grad)" />
+  <path
+    fill="#fff8f0"
+    d="M64 28c11.6 0 21 9.4 21 21s-9.4 21-21 21-21-9.4-21-21 9.4-21 21-21zm0 10.5a10.5 10.5 0 1 0 0 21 10.5 10.5 0 0 0 0-21z"
+  />
+  <path
+    fill="#fff8f0"
+    d="M36 74c0-4.4 3.6-8 8-8h40c4.4 0 8 3.6 8 8v6.5c0 12.2-9.9 22.1-22.1 22.1H58.1C45.9 102.6 36 92.7 36 80.5V74z"
+  />
+</svg>

@@ -1,8 +1,0 @@
-[submodule "audios"]
-	path = audios
-	url = https://github.com/islamic-works/audios.git
-	branch = main
-[submodule "assets"]
-	path = assets
-	url = https://github.com/islamic-works/assets.git
-	branch = islamic-web
