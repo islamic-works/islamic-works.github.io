@@ -13,7 +13,8 @@ navigation_footer_order: 10
 <p>Consulte abaixo o histórico completo de artigos publicados no Islamic Works, organizado por ano para facilitar a navegação.</p>
 
 <section class="archive-list">
-  {% assign postsByYear = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+  {% assign published_posts = site.posts | where_exp: "post", "post.date <= site.time" %}
+  {% assign postsByYear = published_posts | group_by_exp: "post", "post.date | date: '%Y'" %}
   {% for year in postsByYear %}
   <div class="archive-year">
     <h2>{{ year.name }}</h2>
