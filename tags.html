@@ -21,7 +21,8 @@ permalink: /tags/
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
   <h2 class="tags-title" id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
   <div class="tags-group">
-    {% for post in site.tags[this_word] %}{% if post.title != null %}
+    {% assign tagged_published_posts = site.tags[this_word] | where_exp: "post", "post.date <= site.time" %}
+    {% for post in tagged_published_posts %}{% if post.title != null %}
     <div class="tag-item">
       <div class="tag-text">
         <a class="tag-link" href="{{ root_url }}{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> | <small><span class="tag-date">{{ post.date | date_to_string }}</span></small>

@@ -40,6 +40,14 @@ layout: default
 							<span>
 								<time datetime="{{ page.date | date_to_xmlschema }}">{{page.date | date: '%b %d, %Y'}}</time>
 							</span>
+							{% if page['update-time'] %}
+							<span class="post-update-time">
+								(
+									Atualizado em:
+									<time datetime="{{ page['update-time'] | date_to_xmlschema }}">{{ page['update-time'] | date: '%b %d, %Y' }}</time>
+								)
+							</span>
+							{% endif %}
 						</div>
 					</div>
 				</div>
